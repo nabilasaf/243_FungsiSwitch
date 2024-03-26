@@ -33,8 +33,52 @@ float pembagian(int a, int b)
     return a / b;
 }
 
+
 int main()
 {
-    std::cout << "Hello World!\n";
-}
+    int pilihan;
 
+    do
+    {
+        cout << "Kalkulator Sederhana" << endl;
+        cout << "====================" << endl;
+        cout << "1. Penjumlahan" << endl;
+        cout << "2. Pengurangan" << endl;
+        cout << "3. Perkalian" << endl;
+        cout << "4. Pembagian" << endl;
+        cout << "====================" << endl;
+        cout << "Masukan menu pilihan : ";
+        cin >> pilihan;
+
+        switch (pilihan) {
+        case 1:
+            inputData();
+            cout << "Hasil penjumlahan = " << penjumlahan(bilangan1, bilangan2) << endl;
+            break;
+                
+        case 2:
+            inputData();
+            cout << "Hasil Pengurangan = " << pengurangan(bilangan1, bilangan2) << endl;
+            break;
+                    
+        case 3:
+            inputData();
+            cout << "Hasil Perkalian = " << perkalian(bilangan1, bilangan2) << endl;
+            break;
+                       
+        case 4:
+            inputData();
+            cout << "Hasil pembagian = " << pembagian(bilangan1, bilangan2) << endl;
+            break;
+                           
+        case 5:
+            break;
+                                
+        default:
+            cout << "Pilihan tidak ada" << endl;
+            break;
+                                
+        }
+    }
+           
+}
